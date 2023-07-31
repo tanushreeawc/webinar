@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webinar Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Unlock Your Potential with Webinars</h1>
+    <p>Join our interactive online webinar and transform your business</p>
+  </header>
+  <div class="registeration-form">
+  <section id="registration">
+    <h2 style="color:black;">Register Now</h2>
+    <form id="registrationForm" onsubmit="event.preventDefault(); submitForm();">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <button type="submit">Secure My Spot</button>
+    </form>
+    <p class="limited-seats">Hurry! Limited seats available.</p>
+  </section>
+  </div>
+  <section id="details">
+    <h2 style="color:Purple;">About the Webinar</h2>
+    <p>Join us on August 21th, 2023, for an immersive webinar experience designed to help you harness the true power of webinars. Discover proven strategies, expert insights, and practical tips to captivate your audience, generate leads, and grow your business.</p>
+    <p>Date: August 21, 2023</p>
+    <p>Time: 11:00 AM -01:30 PM</p>
+    <p>Duration: 2.5 hours</p>
+  </section>
+
+  <section id="agenda">
+    <h2>Agenda</h2>
+    <ul>
+      <li>
+        <h3 style="color:purple;">Session 1: The Art of Engaging Webinars (10:00 AM - 10:30 AM)</h3>
+        <p>Learn how to create impactful webinars that connect with your audience on a deeper level.</p>
+      </li>
+      <li>
+        <h3 style="color:Purple;">Session 2: Mastering Webinar Promotion (11:00 AM - 01:30 PM)</h3>
+        <p>Discover effective strategies to promote your webinars and attract a larger audience.</p>
+      </li>
+      <li>
+        <h3 style="color:purple;">Session 3: Advanced Webinar Techniques (11:00 AM - 01:30 PM)</h3>
+        <p>Explore advanced webinar techniques and best practices to elevate your presentations.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="speakers">
+    <h2 style="color: red;">Featured Speakers</h2>
+    <div class="speaker">
+      <img src="data:image/jpeg;base64,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" alt="Speaker 1">
+      <h3 style="color: black;">Mukesh Ambani</h3>
+      <p>Founder & CEO, Company Reliance</p>
+    </div>
+    <div class="speaker">
+      <img src="data:image/jpeg;base64,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" alt="Speaker 2">
+      <h3 style="color: black;">Pete lau</h3>
+      <p>Marketing Director, Company Oneplus</p>
+    </div>
+  </section>
+  
+  <section id="confirmation" class="hidden">
+    <div class="confirmation-content">
+      <h2 style="color: black;">Thank You for Registering!</h2>
+      <p>Your spot is confirmed for the webinar. We can't wait to inspire and empower you. Keep an eye on your inbox for further details and instructions.</p>
+      <!-- Share with Friends Section -->
+<div class="share-section">
+  <h3 style="color: black;">Share this Webinar with Friends</h3>
+  <p>Invite your friends and colleagues to join the webinar!</p>
+  
+  <!-- Social Media Sharing Buttons -->
+  <div class="social-buttons">
+    <button id="facebook-share-btn">Share on Facebook</button>
+    <button id="twitter-share-btn">Share on Twitter</button>
+    <button id="linkedin-share-btn">Share on LinkedIn</button>
+    <button id="whatsapp-share-btn">Share on WhatsApp</button>
+  </div>
+  
+  <!-- Email Sharing -->
+  <div class="email-share">
+    <input type="email" id="friend-email" placeholder="Enter friend's email">
+    <button id="send-email-btn">Send Invite</button>
+  </div>
+  
+  <!-- Referral Link -->
+  <div class="referral-link">
+    <p>Or copy and share this link:</p>
+    <input type="text" id="referral-link" readonly value="https://www.example.com/webinar?ref=your_unique_referral_code">
+    <button id="copy-link-btn">Copy Link</button>
+  </div>
+  
+  <!-- Referral Progress and Leaderboard -->
+  <div class="referral-progress">
+    <p>Your Referrals: <span id="referral-count">0</span></p>
+    <p>Leaderboard Rank: <span id="leaderboard-rank">#N/A</span></p>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <section id="thankyou" class="hidden">
+    <div class="thankyou-content">
+      <h2 style="color: black;">Thank You for Joining!</h2>
+      <p>Thank you for attending our webinar. We hope you found it valuable and gained insights to take your business to new heights. If you have any further questions, please don't hesitate to reach out to us.</p>
+      <div class="social-share">
+        <p>Share with your friends:</p><br>
+        <div class="share-buttons">
+          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
